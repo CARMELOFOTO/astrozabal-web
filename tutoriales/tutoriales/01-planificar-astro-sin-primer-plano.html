@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificar la visibilidad de un astro (sin primer plano) — Tutoriales ASTROZABAL</title>
+    <meta name="description" content="Aprende a comprobar cuándo y en qué dirección se puede ver un astro (Vía Láctea, luna, constelación...) desde un lugar, sin necesidad de marcar un sujeto en primer plano.">
+    <link rel="icon" href="../icon-192.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen">
+
+    <div class="max-w-2xl mx-auto px-4 py-8 md:py-12">
+
+        <a href="index.html" class="inline-flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm mb-6">
+            ← Todos los tutoriales
+        </a>
+
+        <header class="mb-8">
+            <div class="text-indigo-400 text-xs font-semibold uppercase tracking-wide mb-1">Tutorial 1</div>
+            <h1 class="text-2xl md:text-3xl font-bold text-indigo-200">Planificar la visibilidad de un astro sin primer plano</h1>
+            <p class="text-slate-400 mt-2 text-sm md:text-base">
+                A veces solo quieres saber cuándo y hacia dónde mirar para ver un astro concreto
+                desde un lugar — sin montar todavía una composición con un sujeto en primer plano.
+                En este tutorial vas a aprender a hacer justo eso.
+            </p>
+        </header>
+
+        <section class="space-y-6">
+
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-4">
+                <h2 class="text-indigo-300 font-semibold text-sm mb-2">📖 Antes de empezar</h2>
+                <p class="text-[13px] leading-relaxed text-slate-300">
+                    ASTROZABAL siempre trabaja con un <b>astro de referencia</b> — el sol, la luna,
+                    el Centro Galáctico, una constelación o una lluvia de estrellas — que eliges en
+                    el panel <b>"🌌 Astro de referencia"</b>, en los chips bajo <b>"Alinear con:"</b>.
+                    No hace falta marcar ningún sujeto en el mapa para trabajar con el astro: puedes
+                    consultar directamente cuándo sale, cuándo se pone y en qué dirección está.
+                </p>
+            </div>
+
+            <div class="bg-indigo-950/40 border border-indigo-800 rounded-xl p-4">
+                <h2 class="text-indigo-300 font-semibold text-sm mb-3">✏️ Ejercicio 1: elige tu astro</h2>
+                <ol class="list-decimal list-inside space-y-2 text-[13px] leading-relaxed text-slate-300">
+                    <li>Con tu lugar y fecha ya elegidos, abre el panel <b>"🌌 Astro de referencia"</b>.</li>
+                    <li>En los chips de <b>"Alinear con:"</b>, elige el astro que te interese — por
+                        ejemplo el Centro Galáctico (la Vía Láctea) o la luna.</li>
+                    <li>Fíjate en la etiqueta <b>Az / Alt</b> que aparece sobre el mapa: te da el
+                        azimut (dirección de la brújula) y la altura sobre el horizonte de ese astro
+                        en el momento exacto que tengas seleccionado.</li>
+                </ol>
+            </div>
+
+            <div class="bg-indigo-950/40 border border-indigo-800 rounded-xl p-4">
+                <h2 class="text-indigo-300 font-semibold text-sm mb-3">✏️ Ejercicio 2: encuentra orto, ocaso y cénit</h2>
+                <p class="text-[13px] leading-relaxed text-slate-300 mb-2">
+                    Con el astro ya elegido, usa estos tres botones para saltar directamente a los
+                    momentos clave de ese día, sin calcular nada a mano:
+                </p>
+                <ul class="space-y-2 text-[13px] leading-relaxed text-slate-300">
+                    <li><span class="font-semibold">🌅 Orto</span> — pone la fecha/hora justo cuando el astro sale.</li>
+                    <li><span class="font-semibold">🌇 Ocaso</span> — pone la fecha/hora justo cuando el astro se pone.</li>
+                    <li><span class="font-semibold">🔝 Cénit</span> — pone la fecha/hora en el punto más alto del astro ese día.</li>
+                </ul>
+                <p class="text-[13px] text-slate-400 mt-3">
+                    Prueba los tres y observa cómo cambia el valor de <b>Alt</b> (altura) en cada
+                    caso: en el orto y el ocaso ronda los 0°, y en el cénit alcanza su valor máximo
+                    del día.
+                </p>
+            </div>
+
+            <div class="bg-indigo-950/40 border border-indigo-800 rounded-xl p-4">
+                <h2 class="text-indigo-300 font-semibold text-sm mb-3">✏️ Ejercicio 3: explora varios días a la vez</h2>
+                <ol class="list-decimal list-inside space-y-2 text-[13px] leading-relaxed text-slate-300">
+                    <li>Busca el botón <b>🔍 Buscar sitio y fecha</b>.</li>
+                    <li>Al pulsarlo, la app dibuja en el mapa una línea por cada orto/ocaso del
+                        astro elegido dentro de un intervalo de fechas.</li>
+                    <li>Toca cualquier punto de una de esas líneas: la app coloca la cámara ahí
+                        mismo (a la distancia real de ese punto) y ajusta la fecha automáticamente.
+                        Es una forma rápida de comparar varios días sin ir probando fecha por fecha.</li>
+                </ol>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-4">
+                <h2 class="text-indigo-300 font-semibold text-sm mb-3">🚩 Comprobar si el terreno tapa el astro</h2>
+                <p class="text-[13px] leading-relaxed text-slate-300">
+                    Aunque el astro esté sobre el horizonte matemático, una montaña o colina cercana
+                    puede taparlo desde tu punto de vista. Para comprobarlo sin necesidad de marcar
+                    ningún sujeto, usa el botón <b>🌌 Astro</b> (junto a "🚩 Perfil"): revisa el
+                    perfil del terreno exactamente en el azimut del astro elegido en "Alinear con",
+                    ignorando cualquier sujeto que pudieras tener marcado. Así sabes, con antelación,
+                    si el lugar tiene el horizonte despejado en esa dirección.
+                </p>
+                <p class="text-[13px] text-slate-400 mt-2">
+                    Recuerda que este cálculo usa datos de elevación del terreno desnudo — no
+                    detecta edificios, muros ni árboles, solo desniveles del suelo.
+                </p>
+            </div>
+
+            <div class="bg-emerald-950/40 border border-emerald-800 rounded-xl p-4">
+                <h2 class="text-emerald-300 font-semibold text-sm mb-2">✅ Para comprobar que lo has entendido</h2>
+                <p class="text-[13px] leading-relaxed text-slate-300">
+                    Elige un astro y una fecha: ¿a qué hora tiene su orto y su ocaso? ¿En qué azimut
+                    lo verías en su punto más alto (cénit)? Y usando "🌌 Astro" en el perfil,
+                    ¿el horizonte de tu lugar está despejado en esa dirección o hay algo que lo tapa?
+                    Si sabes responder sin necesidad de marcar ningún sujeto en el mapa, ¡ya dominas
+                    esta parte de la app!
+                </p>
+            </div>
+
+        </section>
+
+        <div class="mt-10 pt-6 border-t border-slate-800 flex justify-between text-sm">
+            <a href="index.html" class="text-indigo-400 hover:text-indigo-300">← Todos los tutoriales</a>
+            <span class="text-slate-600">Siguiente tutorial: próximamente</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
